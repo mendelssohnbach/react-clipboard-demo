@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -14,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <input
+        className="text-content"
         type="text"
         onChange={(e) => updateText(e.target.value)}
         value={text}
